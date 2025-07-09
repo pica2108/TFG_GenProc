@@ -147,22 +147,21 @@ def verificarBordesCosta(cuadricula, width, height, bordes):
     contador_borde = 0
     contador_costa_interna = 0
 
-    # Contar casillas no-mar en los bordes
+
     for (x, y) in bordes:
         if cuadricula[x][y][0] != 'mar':
             contador_borde += 1
 
-    # Buscar casillas de costa interna
+
     for y in range(1, height - 1):
         for x in range(1, width - 1):
             if cuadricula[y][x][0] == 'mar':
                 continue
-            # Verificar si tiene mar como vecino (costa)
             for dy, dx in [(-1,0), (1,0), (0,-1), (0,1)]:
                 ny, nx = y + dy, x + dx
                 if cuadricula[ny][nx][0] == 'mar':
                     contador_costa_interna += 1
-                    break  # Solo contar una vez
+                    break
 
 
     porcentaje  = contador_borde/(contador_borde+contador_costa_interna)

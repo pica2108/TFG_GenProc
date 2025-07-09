@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-#Generamos una matriz 100x100 con valores aleatorios entre -1 y 1
+
 ruido_blanco = np.random.uniform(0, 1, (100, 100))
 print(ruido_blanco)
 plt.imshow(ruido_blanco, cmap='gray')

@@ -5,8 +5,8 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-width = 150
-height = 150
+width = 50
+height = 50
 cuadricula = [[0 for _ in range(width)] for _ in range(height)]
 
 for i in range(width):
@@ -78,7 +78,6 @@ def vecinos2(x, y, width, height):
     return vecinos
 
 
-# Selecciona la casilla con menor entropía
 
 '''def seleccionarCasilla(cuadricula, height, width):
     menorEntropia = len(tiles)
@@ -94,7 +93,6 @@ def vecinos2(x, y, width, height):
     return casillaFinal'''
 
 
-# Colapsa una casilla seleccionada
 
 def colapsarCasilla(cuadricula, casillaSeleccionada, height, width):
     max_distancia = math.sqrt(height ** 2 + width ** 2)  # Distancia máxima posible en la cuadrícula

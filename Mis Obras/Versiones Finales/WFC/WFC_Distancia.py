@@ -5,8 +5,8 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-width = 100
-height = 100
+width = 50
+height = 50
 cuadricula = [[0 for _ in range(width)] for _ in range(height)]
 
 for i in range(width):

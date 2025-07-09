@@ -44,10 +44,6 @@ for _ in range(iteraciones):
 
 #print(plano)
 
-
-
-
-#Indicamos valor maximo y valor minimo para establecer el blanco y el negro sin que esta se equilibre
 plt.imshow(plano, cmap='gray_r', vmin=0, vmax=1)
 plt.colorbar()
 plt.show()
