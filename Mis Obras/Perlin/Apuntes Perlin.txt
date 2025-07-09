@@ -1,0 +1,30 @@
+(Contamos que la persistencia varia por igual la amplitud y la frecuencia)
+
+A mayor frecuencia mayor variación de color (da sensación de acercarse o alejarse del plano)
+A mayores octavas mayor ruido (rugosidad)
+A mayor persistencia mayor perturbación del plano final
+
+#### Resumen básico #####
+Contamos con persistencia normal = 2
+
+frecuencia alta >2 y pocas octavas <3: muchas variación en los colores, pero muy suaves, más plano todo
+frecuencia alta y muchas octavas >2: mucha variación de zonas y todo más ruidoso, más texturizado
+
+frecuencia baja <2 y pocas octavas: degradado suave y homogéneo
+frecuencia baja y muchas octavas: pocas zonas pero muy ruidosas.
+############
+
+Degradado natural con rugosidad: frecuencia muy baja (<1). Octavas altas y persistencia alta (las octavas tienen más peso)
+Degradado suave: frecuencia muy baja (<1). Octavas o persistencia bajas (<3)
+
+
+####### ISLAS ######
+
+Frecuencia = Tamaño de las islas, por tanto cantidad también
+Octavas = Suavidad de las islas, cuantas más quedarán mas naturales
+Persistencia = Efecto parecido al de las octavas
+
+Mapa de pequeñas islas realistas: 6-10, 6-10, 2. (La erosion ayuda a separar y diferenciar la islas)
+Mapa de islas grandes: 3,8,2.5
+Costa de una isla grande: 0.5-0.8,5-10,2
+
