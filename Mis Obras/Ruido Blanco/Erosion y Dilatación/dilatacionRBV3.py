@@ -4,13 +4,10 @@ import matplotlib.pyplot as plt
 
 #NO HACE NADA. NO HAY CAMBIOS
 def dilatar(ruidoBlanco,umbral,kernelDim,iteraciones):
-    # Convertimos el ruido blanco en una imagen binaria (Si el valor es 0.5 o menos será un color y si no otro)
     ruido_binario = (ruidoBlanco > umbral).astype(np.uint8) * 255  # Escalamos a 0 y 255
 
-    # Creamos un kernel para la dilatacion
     kernel = np.ones((kernelDim, kernelDim), np.uint8)  # Kernel 3x3
 
-    # Aplicamos la erosión
     erosion = cv2.dilate(ruido_binario, kernel, iterations=iteraciones)
 
     return ruido_binario,erosion
